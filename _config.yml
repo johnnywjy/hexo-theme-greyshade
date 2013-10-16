@@ -40,8 +40,10 @@ pixiv:
   userid:
 
 addit:
-  facebook: false
+  weibo: true
+  facebook: true
   twitter: true
   gplus: true
-  pinit: false
+  pinit: true
   publid:
+  
