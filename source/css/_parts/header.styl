@@ -245,12 +245,27 @@ header-height = 30px
       border-radius(50%)
       inline-block()
       text-indent -9999px
-      margin 0 15px 15px 0
+      margin 0 5px 15px 0
       opacity 0.5
       square(28px)
       transition 0.3s
       &:hover
         opacity 1
+      &.weibo
+        background url('/images/social/weibo.png') center no-repeat #e32529
+        border 1px solid #e32529
+        &:hover
+          border 1px solid darken(#e32529, 10%)
+      &.dribbble
+        background url('/images/social/dribbble.png') center no-repeat #c5376d
+        border 1px solid #c5376d
+        &:hover
+          border 1px solid darken(#c5376d, 10%)
+      &.pixiv
+        background url('/images/social/pixiv.png') center no-repeat #258fb8
+        border 1px solid #258fb8
+        &:hover
+          border 1px solid darken(#258fb8, 10%)
       &.facebook
         background url('/images/social/facebook.png') center no-repeat #3B5998
         border 1px solid #3B5998

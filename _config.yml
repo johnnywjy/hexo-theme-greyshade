@@ -13,10 +13,16 @@ mathjax: true
 fancybox: true
 
 social:
+  weibo: true
   twitter: true
   github: true
   gplus: true
+  dribble: false
+  pixiv: false
   rss: true
+
+weibo:
+  username:
 
 twitter:
   username:
@@ -26,6 +32,12 @@ github:
 
 gplus:
   username:
+
+dribble:
+  username:
+
+pixiv:
+  userid:
 
 addit:
   facebook: false

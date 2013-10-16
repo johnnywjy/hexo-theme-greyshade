@@ -28,6 +28,10 @@
 </nav><!-- main-nav -->
 <nav id="sub-nav">
   <div class="social">
+   <% if(theme.social.weibo) { %>
+      <a class="weibo" href="http://weibo.com/<%- theme.weibo.username %>"
+         title="Weibo">Weibo</a>
+    <% } %>
     <% if(theme.social.gplus) { %>
       <a class="google" href="http://plus.google.com/<%- theme.gplus.username %>"
          title="Google+">Google+</a>
@@ -39,6 +43,14 @@
     <% if(theme.social.github) { %>
       <a class="github" href="http://github.com/<%- theme.github.username %>"
          title="Github">Github</a>
+    <% } %>
+    <% if(theme.social.dribbble) { %>
+      <a class="dribbble" href="http://dribbble.com/<%- theme.dribbble.username %>"
+         title="Dribble">Dribbble</a>
+    <% } %>
+    <% if(theme.social.pixiv) { %>
+      <a class="pixiv" href="http://www.pixiv.net/member.php?id=<%- theme.pixiv.userid %>"
+         title="Pixiv">Pixiv</a>
     <% } %>
     <% if(theme.social.rss) { %>
         <a class="rss" href="<%- config.root%>atom.xml" title="RSS">RSS</a>
