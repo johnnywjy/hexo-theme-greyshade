@@ -46,4 +46,5 @@ addit:
   gplus: true
   pinit: true
   publid:
-  
+
+rss: /atom.xml
