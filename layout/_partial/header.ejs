@@ -11,13 +11,13 @@
 </div><!-- profilepic -->
 <h1><a href="<%- config.root %>"><%= config.author %></a></h1>
 <nav id="main-nav">
-  <ul class="main">
-    <% for (var i in theme.menu.page) { %>
-      <li>
-      <a href="<%- config.root %><%- theme.menu.page[i] %>"><%= i %></a>
-      </li>
-    <% } %>
-  </ul>
+  <% if(config.subtitle) { %>
+  <section class="subtitle">
+    <p>
+      <%= config.subtitle %>
+    </p>
+  </section>
+  <% } %>
   <% if(config.description) { %>
   <section class="aboutme">
     <p>
@@ -25,6 +25,13 @@
     </p>
   </section>
   <% } %>
+  <ul class="main">
+    <% for (var i in theme.menu.page) { %>
+      <li>
+      <a href="<%- config.root %><%- theme.menu.page[i] %>"><%= i %></a>
+      </li>
+    <% } %>
+  </ul>
 </nav><!-- main-nav -->
 <nav id="sub-nav">
   <div class="social">
